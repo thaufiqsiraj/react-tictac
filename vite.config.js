@@ -1,8 +1,8 @@
-import { defineConfig } from "vite";
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
+// https://vite.dev/config/
 export default defineConfig({
-  base: "/react-tictac/", // Ensure this matches your repo name
-  build: {
-    assetsDir: "assets", // Ensure assets go to 'assets/'
-  },
-});
+  plugins: [react()],
+  base: '/react-tictac/',  // Add this line
+})
